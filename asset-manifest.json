@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/life_calulator_960_square/static/css/main.a9c2fbf4.css",
-    "main.js": "/life_calulator_960_square/static/js/main.0d23e7ce.js",
+    "main.js": "/life_calulator_960_square/static/js/main.10bdf87d.js",
     "static/js/787.e79225ec.chunk.js": "/life_calulator_960_square/static/js/787.e79225ec.chunk.js",
     "static/media/logo.svg": "/life_calulator_960_square/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/life_calulator_960_square/index.html",
     "main.a9c2fbf4.css.map": "/life_calulator_960_square/static/css/main.a9c2fbf4.css.map",
-    "main.0d23e7ce.js.map": "/life_calulator_960_square/static/js/main.0d23e7ce.js.map",
+    "main.10bdf87d.js.map": "/life_calulator_960_square/static/js/main.10bdf87d.js.map",
     "787.e79225ec.chunk.js.map": "/life_calulator_960_square/static/js/787.e79225ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9c2fbf4.css",
-    "static/js/main.0d23e7ce.js"
+    "static/js/main.10bdf87d.js"
   ]
 }
