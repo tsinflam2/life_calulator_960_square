@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
+import Collapse from "react-bootstrap/Collapse";
 import { Form } from "react-bootstrap";
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,6 +10,7 @@ import Col from "react-bootstrap/Col";
 import Board from "./component/Board";
 
 function App() {
+  const [open, setOpen] = useState(false);
   const [newAge, setNewAge] = useState(0);
   const [boardInstance, setBoardInstance] = useState(<Board />);
 
@@ -46,6 +48,35 @@ function App() {
 
   return (
     <div className="App">
+      <>
+        <Button
+          className="mt-3"
+          onClick={() => setOpen(!open)}
+          aria-controls="example-collapse-text"
+          aria-expanded={open}
+        >
+          How To Use This Life Calculator? Click Me to Explain.
+        </Button>
+
+        <Collapse in={open}>
+          <div id="example-collapse-text">
+            <b>What the square(s) means?</b>
+            <p>
+              There are 960 squares in total.
+              <br />
+              Assume you have 80 years old, then you have 80 * 12 Months = 960
+              Months = 960 Squares.
+              <br />
+              If you are 30 years old, then there are 30 * 12 = 360 squares used
+              (Represented by a square filled with "\") <br />
+              You can download the Mobile app version / bookmark this web app,
+              to remind yourself to treasure your future time.
+            </p>
+          </div>
+        </Collapse>
+      </>
+      <hr></hr>
+
       <div className="d-flex justify-content-center">
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
