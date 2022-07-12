@@ -10,12 +10,20 @@ import Board from "./component/Board";
 
 function App() {
   const [newAge, setNewAge] = useState(0);
-  const [boardInstance, setBoardInstance] = useState();
+  const [boardInstance, setBoardInstance] = useState(<Board />);
 
   useEffect(() => {
     console.log("1", { newAge });
     // let a = localStorage.getItem("newAge");
   }, [newAge]);
+
+  useEffect(() => {
+    let ageInLocalStorage = localStorage.getItem("newAge");
+    if (ageInLocalStorage > 0) {
+      setNewAge(ageInLocalStorage);
+    }
+    // let a = localStorage.getItem("newAge");
+  }, []);
 
   const clearLocalS = () => {
     localStorage.removeItem("newAge");
